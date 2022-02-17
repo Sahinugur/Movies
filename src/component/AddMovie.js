@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function handleFormSubmit(e) {
   e.preventDefault();
@@ -42,11 +43,13 @@ class AddMovie extends React.Component {
               ></textarea>
             </div>
           </div>
-          <input
-            type="submit"
-            className="btn btn-danger btn-block"
-            value="Add Movie"
-          />
+          <Link to="/">
+            <input
+              type="submit"
+              className="btn btn-danger btn-block"
+              value="Add Movie"
+            />
+          </Link>
         </form>
       </div>
     );
